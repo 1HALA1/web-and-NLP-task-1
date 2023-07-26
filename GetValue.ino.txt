@@ -32,8 +32,8 @@
     </head>
     <body>
         <script>
-            var buttonValue = sessionStorage.getItem('buttonValue');
-            document.write("Last Value: " + buttonValue);
+            var buttonValue = sessionStorage.getItem('GetValue');
+            document.write("Last Value: " + GetValue);
         </script>
     </body>
 </html>
