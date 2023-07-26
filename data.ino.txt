@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Update</title>
+        <style>
+            body{
+                background-color:#F5F5F5;
+                font-family:'Times New Roman', Times, serif;
+                text-align:start;
+            }
+
+            h1{
+                color:#553f82;
+                
+            }
+
+            p{
+                color:#1789da;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Data Update:</h1>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Data Update </title>
+    </head>
+    <body>
+        <script>
+            var buttonValue = sessionStorage.getItem('buttonValue');
+            document.write("Last Value: " + buttonValue);
+        </script>
+    </body>
+</html>

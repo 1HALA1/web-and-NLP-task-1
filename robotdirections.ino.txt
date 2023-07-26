@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robot Directions</title>
+  <header>
+    <h1>THE DIRECTIONS:</h1>
+</header>
+  <style>
+    body {
+      background-color:white;
+      font-family:Arial, Helvetica, sans-serif;
+      text-align: center;
+      
+    }
+    
+    h1 {
+      color:#553f82;
+      margin:0%;
+    }
+    
+    .button-container {
+      display:ruby;
+      justify-content: center;
+      margin-top: 70px;
+    }
+    
+    .button {
+      background-color: #838382;
+      color: #553f82;
+      padding: 20px 30px;
+      border:#121212;
+      cursor:all-scroll;
+      margin: 20px;
+    }
+    
+    .button:hover {
+      background-color: #030e3e;
+    }
+  </style>
+
+  <script src="control.js"></script>
+</head>
+
+</body>
+<body>
+
+
+    <button class="button" onclick="sendValue('Forward')">Forward</button>
+    <button class="button" onclick="sendValue('Backward')">Backward</button>
+    <button class="button" onclick="sendValue('Left')">Left</button>
+    <button class="button" onclick="sendValue('Right')">Right</button>
+    <button class="button" onclick="sendValue('Stop')">Stop</button>
+    
+
+    <script>
+    function sendValue(buttonValue) {
+        sessionStorage.setItem('buttonValue', buttonValue);
+        window.location.assign("data.html");
+    }
+    </script>
+
+</body>
+</html>
