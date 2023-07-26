@@ -38,7 +38,7 @@
     }
   </style>
 
-  <script src="control.js"></script>
+  <script src="Script.js"></script>
 </head>
 
 </body>
@@ -53,9 +53,9 @@
     
 
     <script>
-    function sendValue(buttonValue) {
-        sessionStorage.setItem('buttonValue', buttonValue);
-        window.location.assign("data.html");
+    function sendValue(GetValue) {
+        sessionStorage.setItem('buttonValue', GetValue);
+        window.location.assign("GetValue.html");
     }
     </script>
 
